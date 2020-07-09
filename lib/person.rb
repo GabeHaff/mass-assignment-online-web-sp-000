@@ -4,11 +4,7 @@ class Person
   
   
   
-  def initialize(attributes={}) #(:name, :eye_color)
-   # @name = name 
-   # @eye_color = eye_color 
-   # @@attributes << name, eye_color
-    #
+  def initialize(attributes={})
     attributes.each{|key,value| self.send(("#{key}="),value)}
   end 
 end #class end 
