@@ -10,6 +10,6 @@ class Person
    # @eye_color = eye_color 
    # @@attributes << name, eye_color
     #
-    attributes.each{|key,value|self.send(("#{key}"),value)}
+    attributes.each{|key,value| self.send(("#{key}"),value)}
   end 
 end #class end 
